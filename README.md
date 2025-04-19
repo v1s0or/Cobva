@@ -1,2 +1,8 @@
 # Cobva
-Cobra parody, made in Java
+Cobra parody, made in Java, made by [me](https://github.com/v1s0or)
+> [!CAUTION]
+> I am NOT responsible for your actions, please and i beg you to use it responsibly
+
+# Screenshots
+![ss1](https://i.ibb.co/39HDfRVz/image.png)
+![ss2](https://i.ibb.co/PG351zmp/image.png)
