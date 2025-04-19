@@ -29,6 +29,8 @@ public class SinglePortScan {
 			System.out.println("Port " + port + " is " + RED + "CLOSED" + RESET);
 		}
 		
+		scanner1.close(); 
+		
 		}
 		
 	    public static boolean isPortOpen(String host, int port, int timeout) {
