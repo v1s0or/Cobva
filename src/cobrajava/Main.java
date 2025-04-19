@@ -39,7 +39,7 @@ public class Main {
     			+ " Cobra Parody made in Java, might be slow.\r\n"
     			+ " side project, spelt as CO + UV + A (B is slient)\r\n"
     			+ " made by v1s0or\r\n"
-    			+ "" + RESET);
+    			+ "");
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Do you want to scan a single port? (y/n)");
