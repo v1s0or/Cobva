@@ -7,10 +7,6 @@ import java.util.Scanner;
 
 public class SinglePortScan {
 	
-    public static final String RESET = "\u001B[0m";
-    public static final String RED = "\u001B[31m";
-    public static final String GREEN = "\u001B[32m";
-    
 	public static void single(String[] args) {
 		Scanner scanner1 = new Scanner(System.in);
 		
@@ -23,13 +19,13 @@ public class SinglePortScan {
 		int timeout = 100;
 		
 		if(isPortOpen(host, port, timeout)) {
-			System.out.println("Port " + port + " is " + GREEN + "OPEN" + RESET);
+			System.out.println("Port " + port + " is OPEN");
 			}
 		else {
-			System.out.println("Port " + port + " is " + RED + "CLOSED" + RESET);
+			System.out.println("Port " + port + " is CLOSED");
 		}
 		
-		scanner1.close(); 
+		scanner1.close();
 		
 		}
 		
