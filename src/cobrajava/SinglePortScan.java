@@ -17,7 +17,7 @@ public class SinglePortScan {
 		System.out.println("\nEnter Host: ");
 		String host = scanner1.nextLine();
 		
-		System.out.println("Enter Port to scan");
+		System.out.println("\nEnter Port to scan");
 		int port = scanner1.nextInt();
 		
 		int timeout = 100;
