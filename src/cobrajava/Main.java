@@ -28,15 +28,9 @@ import java.util.List;
  */
 
 public class Main {
-	
-    public static final String RESET = "\u001B[0m";
-    public static final String RED = "\u001B[31m";
-    public static final String GREEN = "\u001B[32m";
-    public static final String PURPLE = "\u001B[35m";
-
     public static void main(String[] args) {
 
-    	System.out.println(PURPLE + " _____       _               \r\n"
+    	System.out.println(" _____       _               \r\n"
     			+ "/  __ \\     | |              \r\n"
     			+ "| /  \\/ ___ | |____   ____ _ \r\n"
     			+ "| |    / _ \\| '_ \\ \\ / / _` |\r\n"
@@ -84,20 +78,20 @@ public class Main {
         for (int port = startPort; port <= endPort; port++) {
             try (Socket socket = new Socket()) {
                 socket.connect(new InetSocketAddress(host, port), timeout);
-                System.out.println(GREEN + "[+] Port " + port + " is OPEN" + RESET);
+                System.out.println("[+] Port " + port + " is OPEN");
                 openPorts.add(port); // counts the open port number
                 openPortCount++; // how many ports are opened are counted
             } catch (IOException ex) {
-                System.out.println(RED + "[-] Port " + port + " is CLOSED" + RESET);
+                System.out.println("[-] Port " + port + " is CLOSED");
                 closedPortCount++;
             }
         }
 
-        System.out.println(PURPLE + "\nScanning complete." + RESET);
-        System.out.println("Open ports found: " + GREEN + openPortCount + RESET);
-        System.out.println(GREEN + openPorts + RESET);
+        System.out.println("\nScanning complete.");
+        System.out.println("Open ports found: " + openPortCount);
+        System.out.println(openPorts);
         System.out.println("\n");
-        System.out.println("Closed Ports: " + RED + closedPortCount + RESET);
+        System.out.println("Closed Ports: " + closedPortCount);
         scanner2.close();
     }
 }
